@@ -69,14 +69,17 @@ Step 4: Run the project
 Open index.html in browser or use Live Server
 
 📁 project structure
-🌿 GreenNest/
+🌿 greennest/
 │
-├── 📄 index.html        → Home page (Plant listing)
-├── 🛒 cart.html         → Shopping cart page
-├── 🎨 style.css         → Styling file
-├── ⚙️ script.js         → JavaScript functionality
-├── 🖼️ images/           → Plant images folder
-└── 📘 README.md         → Project documentation
+├── 📄 index.html        → home page (plant listing)
+├── 🛍️ shop.html         → shop page (all products listing)
+├── 🌱 product.html      → single product details page
+├── 🧾 contact.html      → contact page (user inquiry form)
+├── 🛒 cart.html         → shopping cart page
+├── 🎨 style.css         → styling file
+├── ⚙️ script.js         → javascript functionality
+├── 🖼️ images/           → plant images folder
+└── 📘 readme.md         → project documentation
 
 ▶️ How to Use
 
