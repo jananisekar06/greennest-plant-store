@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart - GreenNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛒 Your Cart</h1>
+    <a href="shop.html">⬅ Back to Shop</a>
+</header>
+
+ <div class="cart-container">
+
+<h2>Your Items</h2>
+
+<div id="cart-items"></div>
+
+<h3>Total: ₹<span id="cart-total">0</span></h3>
+
+<button onclick="clearCart()">Clear Cart</button>
+
+</div> 
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function displayCart(){
+
+    let container = document.getElementById("cart-items");
+    container.innerHTML = "";
+
+    let total = 0;
+
+    cart.forEach((item, index) => {
+
+        total += item.price;
+
+        container.innerHTML += `
+            <div class="cart-item">
+                <p>${item.name} - ₹${item.price}</p>
+                <button onclick="removeItem(${index})">Remove</button>
+            </div>
+        `;
+    });
+
+    document.getElementById("cart-total").innerText = total;
+}
+
+function removeItem(index){
+    cart.splice(index,1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    displayCart();
+}
+
+function clearCart(){
+    cart = [];
+    localStorage.setItem("cart", JSON.stringify(cart));
+    displayCart();
+}
+
+displayCart();
+</script>
+
+</body>
+</html>
