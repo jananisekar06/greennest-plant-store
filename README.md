@@ -71,15 +71,15 @@ Open index.html in browser or use Live Server
 📁 project structure
 🌿 greennest/
 │
-├── 📄 index.html        → home page (plant listing)
-├── 🛍️ shop.html         → shop page (all products listing)
-├── 🌱 product.html      → single product details page
-├── 🧾 contact.html      → contact page (user inquiry form)
-├── 🛒 cart.html         → shopping cart page
-├── 🎨 style.css         → styling file
-├── ⚙️ script.js         → javascript functionality
 ├── 🖼️ images/           → plant images folder
 └── 📘 readme.md         → project documentation
+├── 🛒 cart.html         → shopping cart page
+├── 🧾 contact.html      → contact page (user inquiry form)
+├── 📄 index.html        → home page (plant listing)
+├── 🌱 product.html      → single product details page
+├── ⚙️ script.js         → javascript functionality
+├── 🛍️ shop.html         → shop page (all products listing)
+├── 🎨 style.css         → styling file
 
 ▶️ How to Use
 
